@@ -8,7 +8,7 @@ const data = (totalUser = 10) => {
   for (let i = 0; i < totalUser; i++) {
     users.push({
       name: faker.name.findName(),
-      email: faker.internet.email(),
+      email: faker.internet.exampleEmail(),
       password: bcrypt.hashSync("secret123"),
       created_at: new Date(),
       updated_at: new Date(),
