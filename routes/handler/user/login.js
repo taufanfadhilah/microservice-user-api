@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
       data: null,
     });
   }
-  delete user.password;
+  user.password = undefined;
   res.status(200).json({
     success: true,
     message: "login success",
